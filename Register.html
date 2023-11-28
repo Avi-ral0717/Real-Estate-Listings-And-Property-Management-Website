@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-image: url(backgroundimage.avif);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        label{
+            margin-bottom: 10px;
+            color: green;
+
+        }
+        div{
+            background-color: white;
+            border-radius: 10px;
+            padding: 50px;
+            width: 400px;
+        }
+        input[type="text"][type="password"]{
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+
+        }
+        input:focus{
+            background-color: aqua;
+        }
+        input[type="submit"]:hover, input[type="reset"]:hover{
+            background-color: brown;
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+        h1{
+            font-size: 50px;
+            color: black;
+            margin-top: 10px;;
+        }
+        a:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+            <h1>SIGN UP</h1>
+            <label for="name">FIRST NAME:</label>
+            <input type="text" placeholder="First name" id="name" name="name">
+            <br>
+             <br>
+             <label for="name">LAST NAME:</label>
+             <input type="text" placeholder="Last name" id="name" name="name">
+             <br>
+             <br>
+            <label for="password">PASSWORD:</label>
+            <input type="password" placeholder="Create A Password" id="password" name="password">
+            <br>
+            <button type="reset" value="RESET" id="reset">Reset</button>
+            <a href="Buy.html"  ><input type="submit" value="SUBMIT" id="submit">
+            <a href="formpage.html" id="CreateOne">Go To Previous Page</a>
+
+            </a>
+    </div>
+    </body>
+</html>

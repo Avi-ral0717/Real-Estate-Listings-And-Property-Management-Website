@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="login.js"></script>
+    <style>
+        body{
+            background-image: url(backgroundimage.avif);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        label{
+            margin-bottom: 10px;
+            color: green;
+
+        }
+        div{
+            background-color: white;
+            border-radius: 10px;
+            padding: 50px;
+            width: 400px;
+        }
+        input[type="text"][type="password"]{
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+
+        }
+        input[type="submit"][type="reset"]{
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: none;
+            transition: 0.5s;
+        }
+        input:focus{
+            background-color: aqua;
+        }
+        input[type="submit"]:hover, input[type="reset"]:hover{
+            background-color: brown;
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+        h1{
+            font-size: 50px;
+            color: black;
+            margin-top: 10px;;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+            <h1>LOGIN</h1>
+            <label for="name">USERNAME:</label>
+            <input type="text" placeholder="Username" id="name" name="name">
+            <br>
+             <br>
+            <label for="password">PASSWORD:</label>
+            <input type="password" placeholder="Password" id="password" name="password">
+            <br>
+            <input type="submit" value="SUBMIT" id="submit" onclick="validate()">
+            <button type="reset" value="reset" >Reset</button>
+            <h4>Don't Have An Account?</h6>
+            <a id="CreateOne" href="Register.html" target="_blank">Create One</a>
+            <br>
+            <br>
+            <br>
+            <a href="Buy.html" id="CreateOne">Go To Previous Page</a>
+    </div>
+</body>
+</html>
